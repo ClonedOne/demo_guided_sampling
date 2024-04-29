@@ -39,4 +39,4 @@ This process is both entertaining to watch, and has some interesting implication
 **Attacking input filters.** In particular, this approach could be used to evade text input filters based on lists of blocked words used to prevent the generation of unwanted content in image generation systems.
 By guiding the sampling of the language model towards a target image, it is possible to generate text that is semantically similar to the target image, but that does not contain the blocked words.
 
-**Attacking LM prompts.** A generally similar method could also be used to attack language models. Given a scoring function on the output of the victim LM, it is possible to guide the sampling of the attacker LM to generate a prompt that is likely to induce the desired type of output from the victim LM.
+**Attacking LM prompts.** A generally similar method could also be used to attack language models. Given a scoring function - which could be the output of a third model - over the output of the victim LM, it is possible to guide the sampling of the attacker LM to generate a prompt that is likely to induce the desired type of output from the victim LM.
